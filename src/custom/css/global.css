@@ -1,0 +1,345 @@
+a img,
+body,
+button,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+li,
+menu,
+ol,
+p,
+textarea,
+ul {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+b,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    -webkit-text-size-adjust: none;
+    font: 400 16px "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
+    outline: 0;
+    color: #333
+}
+
+button,
+input[type=button],
+input[type=password],
+input[type=submit],
+input[type=text],
+textarea {
+    -webkit-appearance: none
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #333
+}
+
+.img img,
+video {
+    vertical-align: middle
+}
+
+body {
+    margin: 0 auto;
+    background: #fff
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear:after {
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0
+}
+
+.relative {
+    position: relative;
+}
+
+.position {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    width: 100%;
+    /* min-height: 13.34rem; */
+    min-height: 100vh;
+    position: relative;
+    /* overflow-x: hidden; */
+    -webkit-text-size-adjust: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*header */
+
+.header-back {
+    width: 6.4rem;
+    height: 0.87rem;
+    border-bottom: 2px solid #e3e3e3;
+    position: relative;
+}
+
+.header-back img {
+    width: 0.64rem;
+    height: 0.61rem;
+}
+
+.header-back .btn-back {
+    width: 0.9rem;
+    height: 0.87rem;
+}
+
+.header-back h2 {
+    font-size: 0.35rem;
+    line-height: 0.87rem;
+    text-align: center;
+    color: #d60909;
+    text-align: center;
+}
+
+/*去除点击时的默认事件 */
+
+a,
+button,
+input,
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    background: none;
+}
+
+input[type=button] {
+    display: block;
+}
+
+.input_file {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+/*弹框*/
+
+#sbox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+
+.sbox_inner,
+#lbErr {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 200px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    height: .86rem;
+    width: 5rem;
+    background: url(../images/btn_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: .36rem;
+    color: #fff;
+    line-height: .86rem;
+}
+
+.explainModal {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+}
+
+.explainModal .modal-con {
+    width: 100%;
+    height: 5.4rem;
+    margin-top: 1.9rem;
+    margin-bottom: .9rem;
+    background: url(../images/explan.png) no-repeat left center;
+    background-size: 6.92rem 6.56rem;
+    padding-top: 1.3rem;
+}
+.explainModal .modal-con  span{
+    white-space: normal !important;
+}
+.explainModal .modal-con .explainContent {
+    font-family: "FZCuYuan-M03S";
+    width: 4.5rem;
+    height: 4rem;
+    margin-left: 1.5rem;
+    font-size: .28rem;
+    color: #7c421d;
+    overflow: hidden;
+}
+.customerService{
+    width: .8rem;
+    height: 1rem;
+    position: fixed;
+    left: .2rem;
+    bottom: 2.3rem;
+    background: url(../images/man.png) no-repeat center 0rem;
+    background-size: .7rem .7rem;
+    text-align: center;
+    font-size: .28rem;
+    animation: bounce 2s Infinite;
+    z-index: 15;
+}
+.customerService a{
+    display: block;
+    width: 100%;
+    height: .3rem;
+    padding-top: .7rem;
+    color: #a05c3e;
+}
+@keyframes bounce {
+    0%, 100%, 20%, 53%, 80% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+        transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+    }
+}
+/*开头前端测试连接 start*/
+.first{
+    width:45%;height:0.5rem; line-height: 0.5rem; color: #fff;text-align:center;position:fixed;top:0;z-index: 99; font-size:0.24rem;
+    }
+    .first .right_top{
+    position:absolute; top:0; display: block; z-index: 33; box-sizing: border-box; border-right:0.25rem solid transparent; border-left: 0.25rem solid transparent;
+    }
+    .first.red{
+    background-color:rgba(213,24,24,0.9);
+    }
+    .first.red .right_top{
+    border-top:0.25rem solid rgba(213,24,24,0.9); border-bottom:0.25rem solid rgba(213,24,24,0.9)
+    }
+    .first.gray{
+    background-color:rgba(30,21,21,0.8);
+    }
+    .first.gray .right_top{
+    border-top:0.25rem solid rgba(30,21,21,0.8); border-bottom:0.25rem solid rgba(30,21,21,0.8);
+    }
+    .first.left{
+    left:0;
+    }
+    .first.left .right_top{
+    right:-0.25rem;
+    }
+    .first.right{
+    right:0;
+    }
+    .first.right .right_top{
+    left:-0.25rem;
+    }
+    /*开头前端测试连接 end*/
